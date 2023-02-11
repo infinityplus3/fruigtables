@@ -2,7 +2,6 @@ import React from "react";
 import NavBar from "./navbar.js";
 import Footer from './footer.js'
 import Fader from './fadein.js'
-import {BarChart, CartesianGrid, XAxis, YAxis, Bar, Cell, ResponsiveContainer} from 'recharts';
 import './aboutstyle.css';
 import Link from './truelink.js'
 

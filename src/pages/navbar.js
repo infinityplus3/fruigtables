@@ -4,9 +4,6 @@ import "./stylin.css";
 import Scared from "../assets/scared.webp"
 
 class Header extends React.Component {
-    constructor(props) {
-        super(props)
-    }
     render() {
         return (
             <div className="header">

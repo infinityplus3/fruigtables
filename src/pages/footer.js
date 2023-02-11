@@ -6,15 +6,14 @@ import Discord from '../assets/discord.png'
 import Twitter from '../assets/twitter.png'
 import Instagram from '../assets/instagram.png'
 import Input from './forminput.js'
+import axios from 'axios';
 
 export default class Footer extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
             email: '',
-            emailerror: '',
-            body: '',
-            bodyerror: ''
+            body: ''
         }
         this.handleEmailChange = this.handleEmailChange.bind(this)
         this.handleBodyChange = this.handleBodyChange.bind(this)
@@ -23,21 +22,35 @@ export default class Footer extends React.Component {
 
     handleEmailChange(emaily) {
         this.setState({ email: emaily })
+        console.log(this.state.email)
     }
 
     handleBodyChange(bodyi) {
         this.setState({ body: bodyi })
+        console.log(this.state.body)
     }
 
-    sendEmail() {
-        window.Email.send({
-            Host : "smtp.yourisp.com",
-            Username : "username",
-            Password : "password",
-            To : 'them@website.com',
-            From : "you@isp.com",
-            Subject : "This is the subject",
-            Body : "And this is the body"
+    sendEmail(e) {
+        e.preventDefault();
+        this.sendMessage();
+    }
+
+    sendMessage = () => {
+        const GOOGLE_FORM_MESSAGE_ID = 'entry.1914595045'
+        const GOOGLE_FORM_EMAIL_ID = 'entry.824495972'
+        const GOOGLE_FORM_ACTION_URL = 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSe2qkZX14-IyJvX4O7h9_z-6uMyxxLeg0PZzMmZAs0Z1ZJFmQ/formResponse'
+        const CORS_PROXY = 'https://cors-anywhere.herokuapp.com/'
+        const formData = new FormData()
+        formData.append(GOOGLE_FORM_MESSAGE_ID, this.state.email)
+        formData.append(GOOGLE_FORM_EMAIL_ID, this.state.body)
+        axios.post(CORS_PROXY + GOOGLE_FORM_ACTION_URL, formData)
+        .then(() => {
+            this.setState({
+                email: '',
+                body: ''
+            })
+        }).catch(() => {
+            console.log('bozo')
         })
     }
 
@@ -73,8 +86,8 @@ export default class Footer extends React.Component {
                     <div className='contactformbody'>
                         <Input label="Email Body" locked={false} id='contactformbody' type='textarea' height={80} value={this.state.body} changeFunc={this.handleBodyChange}/>
                     </div>
-                    <div className="needpaddingtop">
-                        <div className='contactformsubmitbutton' onClick={this.sendEmail}>Send Email</div>
+                    <div className="needpaddingtop" onClick={this.sendEmail}>
+                        <div className='contactformsubmitbutton'>Send Email</div>
                     </div>
                 </div>
             </div>
