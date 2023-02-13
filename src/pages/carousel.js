@@ -3,6 +3,8 @@ import { ReactComponent as Left } from '../assets/left.svg'
 import { ReactComponent as Right } from '../assets/right.svg'
 import './carostyle.css';
 
+//sadge :((
+
 class Carousel extends React.Component {
     constructor(props) {
         super(props) 
