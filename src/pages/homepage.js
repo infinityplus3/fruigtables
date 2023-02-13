@@ -17,7 +17,7 @@ class Home extends React.Component {
   render() {
     return (
       <Fader>
-        <NavBar bold={[true, false, false]} />
+        <NavBar bold={[true, false, false, false]} />
         <div className="topbit" style = {{ backgroundImage: `url(${Fruits})`}}>
           <div className="center">
             <div className="truecenter">
@@ -60,7 +60,7 @@ class Home extends React.Component {
           backgroundColor: '#CAE2BC',
           border: '1px dashed #547048'
         }}></hr>
-        <Footer active={[false, true, true]} />
+        <Footer active={[false, true, true, true]} />
       </Fader>
     );
   }

@@ -62,7 +62,7 @@ export default class Footer extends React.Component {
                     <div className='contactinfo'>
                         <div className='phoneno'>Phone Number</div>
                         <div className='separator'></div>
-                        <div className='email'>Email</div>
+                        <div className='email'>contactfruigtables@gmail.com</div>
                     </div>
                     <div className='summarytext'>We are an organization that aims to reduce hunger and help the community by recyling fruits and vegetables that are currently being wasted. </div>
                     <div className='socialicons'>
@@ -75,8 +75,9 @@ export default class Footer extends React.Component {
                 <div className='quicklinks'>
                     <div className='quicktitle'>Quick Links</div>
                     {this.props.active[0] ? <Link href="/home" className="quicklink"><p>Home</p></Link> : null}
-                    {this.props.active[1] ? <Link href="/about" className="quicklink"><p>About Us</p></Link> : null}
-                    {this.props.active[2] ? <Link href="/giving_back" className="quicklink"><p>Giving Back</p></Link> : null}
+                    {this.props.active[1] ? <Link href="/mission" className="quicklink"><p>Our Mission</p></Link> : null}
+                    {this.props.active[2] ? <Link href="/about" className="quicklink"><p>About Us</p></Link> : null}
+                    {this.props.active[3] ? <Link href="/giving_back" className="quicklink"><p>Giving Back</p></Link> : null}
                 </div>
                 <div className='contactform'>
                     <div className='contactformtitle'>Contact Us</div>

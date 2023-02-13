@@ -21,6 +21,8 @@ div {
 .header {
   display: flex;
   background-color: #CAE2BC;
+  min-height: 0;
+  flex-direction: row;
 }
 
 .pic {
@@ -48,6 +50,21 @@ div {
   font-weight: 600;
 }
 
+.dropdownmen {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: rgba(0, 0, 0, 0);
+  margin-left: auto;
+}
+
+.dropcontainer {
+  background-color: #CAE2BC;
+}
 
 .spel {
   padding: 10px;
@@ -251,6 +268,8 @@ div {
   width: 80%;
   align-items: center;
   flex-direction: column;
+  min-width: 0;
+  min-height: 0;
 }
 
 .thirddivider {
