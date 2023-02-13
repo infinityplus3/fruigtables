@@ -4,6 +4,14 @@ import Footer from './footer.js'
 import Fader from './fadein.js'
 import {BarChart, CartesianGrid, XAxis, YAxis, Bar, Cell, ResponsiveContainer} from 'recharts';
 import './aboutstyle.css';
+import Carousel from './carousel'
+
+function importAll(r) {
+  return r.keys().map(r);
+}
+
+const images = importAll(require.context('../assets/missioncaro', false, /\.(png|jpe?g|svg)$/));
+console.log(images)
 
 class Mission extends React.Component {
   constructor(props) {
@@ -123,8 +131,11 @@ class Mission extends React.Component {
                 Our Solution
               </div>
               <div className='thirddivider'></div>
-              <div className="thirdlargetext" style={{ maxWidth: window.innerWidth }}>
+              <div className="thirdlargetext">
                 <div className="thirdfirstbit">Our mission is to reduce this waste by using the power of our communities, coming together to save fruits and vegetables that otherwise would be wasted.</div>
+                <div style={{ padding: "30px"}}>
+                  <Carousel images={images}/>
+                </div>
                 <div className="thirdsecondbit">Why trash our environment even more when we can use what is available to use for the better? Join us in our effort to reduce hunger, help the community, and save our world!</div>
               </div>
             </div>
