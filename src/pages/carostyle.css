@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    flex-direction: row;
+    background-color: #54704869;
+    justify-content: center;
+}
+
+.left {
+    display: flex;
+    width: 20px;
+    height: 20px;
+}
+
+.right {
+    display: flex;
+    width: 20px;
+    height: 20px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+}
