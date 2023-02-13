@@ -31,7 +31,7 @@ class About extends React.Component {
   render() {
     return (
       <Fader>
-        <NavBar bold={[false, false, true]} />
+        <NavBar bold={[false, false, false, true]} />
         <div className="abouttopbit" style = {{ backgroundColor: '#547048'}}>
           <div className="center">
             <div className="truecenter">
@@ -81,7 +81,7 @@ class About extends React.Component {
           backgroundColor: '#CAE2BC',
           border: '1px dashed #547048'
         }}></hr>
-        <Footer active={[true, true, false]} />
+        <Footer active={[true, true, true, false]} />
       </Fader>
     );
   }

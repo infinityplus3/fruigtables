@@ -14,9 +14,10 @@ class Header extends React.Component {
                 <div className = 'imgel' style={{ backgroundImage: `url(${Scared})` }}>aa</div>
               </Link>
               <div className="spel">FruigTables</div>
-              <Link href="/home" className={this.props.bold[0] ? 'bel' : 'el'}><p>Home</p></Link>
-              <Link href="/about" className={this.props.bold[1] ? 'bel' : 'el'}><p>About Us</p></Link>
-              <Link href="/giving_back" className={this.props.bold[2] ? 'bel' : 'el'}><p>Giving Back</p></Link>
+              <Link href="/home" className={this.props.bold[0] ? 'bel' : 'el'}>Home</Link>
+              <Link href="/mission" className={this.props.bold[1] ? 'bel' : 'el'}>Our Mission</Link>
+              <Link href="/about" className={this.props.bold[2] ? 'bel' : 'el'}>About Us</Link>
+              <Link href="/giving_back" className={this.props.bold[3] ? 'bel' : 'el'}>Giving Back</Link>
             </div>
           );
     }
