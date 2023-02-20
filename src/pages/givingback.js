@@ -35,7 +35,7 @@ class About extends React.Component {
           <div className="center">
             <div className="truecenter">
               <div className="aboutfruit">
-                <div>We would appreciate it if you would take the time to help us by volunteering for our program!</div>
+                <div style={{ fontSize: '48px'}}>We would appreciate it if you would take the time to help us by volunteering for our program!</div>
               </div>
             </div>
           </div>

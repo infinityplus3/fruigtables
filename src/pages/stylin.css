@@ -137,7 +137,7 @@ div {
   align-items: center;
   width: 80%;
   height: 60px;
-  font-size: 48px;
+  font-size: 36px;
   color: #E3E5DC;
   display: flex;
   justify-content: flex-start;
@@ -348,21 +348,23 @@ div {
   display: flex;
   padding-bottom: 10px;
   padding-left: 20px;
+  align-items: center;
 }
 
 .phoneno {
-  font-size: 16px;
+  font-size: 12px;
   padding-right: 5px;
 }
 
 .separator {
   background-color: #E3E5DC;
   width: 5px;
+  height: 100%;
 }
 
 .email {
-  font-size: 16px;
-  padding-left: 5px;
+  font-size: 12px;
+  padding-left: 15px;
 }
 
 .summarytext {
@@ -413,7 +415,6 @@ div {
 
 .quicklink {
   font-size: 15px;
-  padding-right: 100px;
 }
 
 .contactformtitle {

@@ -22,8 +22,8 @@ class Home extends React.Component {
           <div className="center">
             <div className="truecenter">
               <div className="fruit">
-                <div>Saving the world,</div>
-                <div>one fruit at a time!</div>
+                <div style={{ textAlign: 'center' }}>Saving the world,</div>
+                <div style={{ textAlign: 'center' }}>one fruit at a time!</div>
               </div>
               <Link className="roundedbutton" href="/giving_back">Become a Volunteer!</Link>
             </div>

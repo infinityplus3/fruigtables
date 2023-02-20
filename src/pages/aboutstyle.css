@@ -169,7 +169,7 @@ div {
 .aboutsecondtitle {
   padding: 20px;
   padding-bottom: 10px;
-  font-size: 60px;
+  font-size: 48px;
   font-weight: 600;
   display: flex;
 }
@@ -327,24 +327,27 @@ div {
   padding-bottom: 10px;
   padding-left: 20px;
 }
+
 .contactinfo {
   display: flex;
   padding-bottom: 10px;
   padding-left: 20px;
+  align-items: center;
 }
 
 .phoneno {
-  font-size: 16px;
+  font-size: 12px;
   padding-right: 5px;
 }
 
 .separator {
   background-color: #E3E5DC;
-  width: 5px;
+  width: 3px;
+  height: 100%;
 }
 
 .email {
-  font-size: 16px;
+  font-size: 12px;
   padding-left: 5px;
 }
 
@@ -396,7 +399,6 @@ div {
 
 .quicklink {
   font-size: 15px;
-  padding-right: 100px;
 }
 
 .contactformtitle {
@@ -513,6 +515,15 @@ div {
   text-align: center;
 }
 
+.aboutsecondimage {
+  padding: 20px;
+  padding-bottom: 10px;
+  display: flex;
+  height: 200px;
+  width: auto;
+  object-fit: contain;
+}
+
 .aboutsecondinformationsmall {
   padding: 20px;
   padding-bottom: 10px;
@@ -538,8 +549,8 @@ div {
 }
 
 .chartdivpad {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
   height: 100%;
   align-items: center;
   display: flex;

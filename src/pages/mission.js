@@ -6,6 +6,7 @@ import {BarChart, CartesianGrid, XAxis, YAxis, Bar, Cell, ResponsiveContainer} f
 import './aboutstyle.css';
 import Carousel from './carousel'
 
+
 function importAll(r) {
   return r.keys().map(r);
 }
@@ -42,7 +43,7 @@ class Mission extends React.Component {
           <div className="center">
             <div className="truecenter">
               <div className="aboutfruit">
-                <div>Our mission is to help reduce the amount of produce waste in today's world.</div>
+                <div style={{ fontSize: '48px'}}>Our mission is to help reduce the amount of produce waste in today's world.</div>
               </div>
             </div>
           </div>
