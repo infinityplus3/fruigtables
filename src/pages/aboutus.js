@@ -4,7 +4,7 @@ import NavBarMobile from './navbarmobile'
 import Footer from './footer.js'
 import Fader from './fadein.js'
 import './aboutstyle.css';
-import Link from './truelink.js'
+import Blank from '../assets/package.jpeg'
 
 
 class About extends React.Component {

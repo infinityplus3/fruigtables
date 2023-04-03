@@ -1,11 +1,11 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createMedia } from "@artsy/fresnel";
-import Home from "./pages/homepage";
-import {About, AboutMobile} from "./pages/aboutus"
+import { Home, HomeMobile } from "./pages/homepage";
+import { About, AboutMobile } from "./pages/aboutus"
 import Giving from "./pages/givingback"
 import Route from './pages/route'
-import Mission from './pages/mission'
+import { Mission, MissionMobile } from './pages/mission'
 
 const ExampleAppMedia = createMedia({
   breakpoints: {
@@ -24,10 +24,20 @@ root.render(
   <StrictMode>
     <MediaContextProvider>
       <Route path="/">
-        <Home />
+        <Media at="sm">
+          <HomeMobile />
+        </Media>
+        <Media greaterThan="sm">
+          <Home />
+        </Media>
       </Route>
       <Route path="/home">
-        <Home />
+        <Media at="sm">
+          <HomeMobile />
+        </Media>
+        <Media greaterThan="sm">
+          <Home />
+        </Media>
       </Route>
       <Route path="/about">
         <Media at="sm">
@@ -41,7 +51,12 @@ root.render(
         <Giving />
       </Route>
       <Route path="/mission">
-        <Mission />
+        <Media at="sm">
+          <MissionMobile />
+        </Media>
+        <Media greaterThan="sm">
+          <Mission />
+        </Media>
       </Route>
     </MediaContextProvider>
   </StrictMode>
