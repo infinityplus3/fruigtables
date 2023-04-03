@@ -2,9 +2,10 @@ import React from "react";
 import NavBar from "./navbar.js";
 import NavBarMobile from './navbarmobile'
 import Footer from './footer.js'
+import FooterMobile from './mobilefooter.js'
 import Fader from './fadein.js'
-import Link from './truelink.js'
 import './aboutstyle.css';
+import Blank from '../assets/package.jpeg'
 
 
 class About extends React.Component {
@@ -16,7 +17,7 @@ class About extends React.Component {
           <div className="center">
             <div className="truecenter">
               <div className="aboutfruit">
-                <div>We would appreciate it if you would take the time to help us by volunteering for our program!</div>
+                <div style={{ fontSize: '48px'}}>We are a team of dedicated high school students, who want to help reduce food waste.</div>
               </div>
             </div>
           </div>
@@ -25,7 +26,7 @@ class About extends React.Component {
           <div className="aboutsecondbit">
             <div className="aboutsecondtext">
               <div className="aboutsecondtitle">
-                Volunteer
+                Meet the Team!
               </div>
               <div className='whyyyyy'>
                 <div className='aboutseconddivider'></div>
@@ -33,24 +34,24 @@ class About extends React.Component {
               <div className='chartcontainer'>
                 <div className="paddedoff">
                   <div className="aboutsecondinformation">
-                    Volunteer as a driver!
+                    Praneel Samal
                   </div>
+                  <img src={Blank} className='aboutsecondimage'/>
                   <div className="aboutsecondinformationsmallp">
                     As a driver, you would be responsible for taking food from other people's houses, and dropping it off at food shelter near you.
                   </div>
-                  <Link className="givingroundedbutton" href="/giving_back">Volunteer as a driver!</Link>
                 </div>
                 <div className='chartdivpad'>
                   <div className="chartdivider" />
                 </div>
                 <div className='otherpaddedoff'>
                   <div className="aboutsecondinformation">
-                    Volunteer to donate food!
+                    Aum Kantawala
                   </div>
+                  <img src={Blank} className='aboutsecondimage'/>
                   <div className="aboutsecondinformationsmallp">
                     If you have any extra food at home, you can volunteer to give it away to food shelters; this is a much simpler task.
                   </div>
-                  <Link className="givingroundedbutton" href="/giving_back">Volunteer as a giver!</Link>
                 </div>
               </div>
             </div>
@@ -76,7 +77,7 @@ class AboutMobile extends React.Component {
           <div className="center">
             <div className="truecenter">
               <div className="aboutfruit">
-                <div>We would appreciate it if you would take the time to help us by volunteering for our program!</div>
+                <div style={{ fontSize: '48px'}}>We are a team of dedicated high school students, who want to help reduce food waste.</div>
               </div>
             </div>
           </div>
@@ -85,7 +86,7 @@ class AboutMobile extends React.Component {
           <div className="aboutsecondbit">
             <div className="aboutsecondtext">
               <div className="aboutsecondtitle">
-                Volunteer
+                Meet the Team!
               </div>
               <div className='whyyyyy'>
                 <div className='aboutseconddivider'></div>
@@ -93,24 +94,24 @@ class AboutMobile extends React.Component {
               <div className='chartcontainer'>
                 <div className="paddedoff">
                   <div className="aboutsecondinformation">
-                    Volunteer as a driver!
+                    Praneel Samal
                   </div>
+                  <img src={Blank} className='aboutsecondimage'/>
                   <div className="aboutsecondinformationsmallp">
                     As a driver, you would be responsible for taking food from other people's houses, and dropping it off at food shelter near you.
                   </div>
-                  <Link className="givingroundedbutton" href="/giving_back">Volunteer as a driver!</Link>
                 </div>
                 <div className='chartdivpad'>
                   <div className="chartdivider" />
                 </div>
                 <div className='otherpaddedoff'>
                   <div className="aboutsecondinformation">
-                    Volunteer to donate food!
+                    Aum Kantawala
                   </div>
+                  <img src={Blank} className='aboutsecondimage'/>
                   <div className="aboutsecondinformationsmallp">
                     If you have any extra food at home, you can volunteer to give it away to food shelters; this is a much simpler task.
                   </div>
-                  <Link className="givingroundedbutton" href="/giving_back">Volunteer as a giver!</Link>
                 </div>
               </div>
             </div>
@@ -121,12 +122,10 @@ class AboutMobile extends React.Component {
           backgroundColor: '#CAE2BC',
           border: '1px dashed #547048'
         }}></hr>
-        <Footer active={[true, true, false, true]} />
+        <FooterMobile active={[true, true, false, true]} />
       </Fader>
     );
   }
 }
 
 export {About, AboutMobile};
-
-
