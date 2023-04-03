@@ -5,7 +5,7 @@ import Footer from './footer.js'
 import FooterMobile from './mobilefooter.js'
 import Fader from './fadein.js'
 import './aboutstyle.css';
-import Blank from '../assets/package.jpeg'
+import Blank from '../assets/profile.jpeg'
 
 
 class About extends React.Component {
