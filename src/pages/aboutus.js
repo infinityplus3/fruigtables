@@ -3,6 +3,7 @@ import NavBar from "./navbar.js";
 import NavBarMobile from './navbarmobile'
 import Footer from './footer.js'
 import Fader from './fadein.js'
+import Link from './truelink.js'
 import './aboutstyle.css';
 
 
