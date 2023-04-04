@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import { createMedia } from "@artsy/fresnel";
 import { Home, HomeMobile } from "./pages/homepage";
 import { About, AboutMobile } from "./pages/aboutus"
-import Giving from "./pages/givingback"
+import { Giving, GivingMobile } from "./pages/givingback"
 import Route from './pages/route'
 import { Mission, MissionMobile } from './pages/mission'
 
@@ -48,7 +48,12 @@ root.render(
         </Media>
       </Route>
       <Route path="/giving_back">
-        <Giving />
+        <Media at="sm">
+          <GivingMobile />
+        </Media>
+        <Media greaterThan="sm">
+          <Giving />
+        </Media>
       </Route>
       <Route path="/mission">
         <Media at="sm">

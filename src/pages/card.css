@@ -23,12 +23,12 @@
     font-weight: 400;
     color: #547048;
     padding: 20px;
-    width: 50%;
+    width: 75%;
     text-align: center;
 }
 
 .divi {
-    width: 20%;
+    width: 30%;
     height: 7px;
     border-radius: 4px;
     display: flex;

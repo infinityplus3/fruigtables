@@ -74,17 +74,13 @@ export default class FooterMobile extends React.Component {
                 </div>
                 <div className='quicklinks' style={{ alignItems: 'center' }}>
                     <div className='quicktitle'>Quick Links</div>
-                    {this.props.active[0] ? <Link href="/home" className="quicklink"><p>Home</p></Link> : null}
-                    {this.props.active[1] ? <Link href="/mission" className="quicklink"><p>Our Mission</p></Link> : null}
-                    {this.props.active[2] ? <Link href="/about" className="quicklink"><p>About Us</p></Link> : null}
-                    {this.props.active[3] ? <Link href="/giving_back" className="quicklink"><p>Giving Back</p></Link> : null}
+                    {this.props.active[0] ? <Link href="/home" className="quicklink2"><p>Home</p></Link> : null}
+                    {this.props.active[1] ? <Link href="/mission" className="quicklink2"><p>Our Mission</p></Link> : null}
+                    {this.props.active[2] ? <Link href="/about" className="quicklink2"><p>About Us</p></Link> : null}
+                    {this.props.active[3] ? <Link href="/giving_back" className="quicklink2"><p>Giving Back</p></Link> : null}
                 </div>
-                {/* <div className='contactform'>
-                    <div className='contactformtitle'>Contact Us</div>
-                    <a className='contactformtitle' style={{ fontSize: '16px'}} href="https://forms.gle/XJHLJPeEHFiftXwE9">Click this link to contact us!</a>
-                </div> */}
                 <div className='contactform' style={{ alignItems: 'center' }}>
-                    <div className='contactformtitle' style={{ fontSize: '16px' }}>Contact us by clicking on this link!</div>
+                    <a href="https://forms.gle/XJHLJPeEHFiftXwE9" className='contactformtitle' style={{ fontSize: '16px' }}>Contact us by clicking on this link!</a>
                 </div>
             </div>
         );

@@ -613,6 +613,23 @@ div {
   z-index: 1;
 }
 
+.givingroundedbutton2 {
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #547048;
+  border-radius: 40px;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+  color: #E3E5DC;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1;
+}
+
 .aboutsecondinformationsmallp {
   padding: 20px;
   padding-bottom: 30px;

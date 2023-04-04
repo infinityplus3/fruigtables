@@ -416,6 +416,10 @@ div {
   padding-right: 100px;
 }
 
+.quicklink2 {
+  font-size: 15px;
+}
+
 .contactformtitle {
   display: flex;
   font-weight: 600;

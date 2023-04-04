@@ -75,9 +75,9 @@ class AboutMobile extends React.Component {
         <NavBarMobile bold={[false, false, true, false]} />
         <div className="abouttopbit" style = {{ backgroundColor: '#547048'}}>
           <div className="center">
-            <div className="truecenter">
+            <div className="truecenter" style={{ paddingLeft: 0, paddingRight: 0 }}>
               <div className="aboutfruit">
-                <div style={{ fontSize: '48px'}}>We are a team of dedicated high school students, who want to help reduce food waste.</div>
+                <div style={{ fontSize: '40px', width: '100%'}}>We are a team of dedicated high school students, who want to help reduce food waste.</div>
               </div>
             </div>
           </div>
@@ -85,13 +85,13 @@ class AboutMobile extends React.Component {
         <div className="abouttextcontainer">
           <div className="aboutsecondbit">
             <div className="aboutsecondtext">
-              <div className="aboutsecondtitle">
+              <div className="aboutsecondtitle" style={{ fontSize: '40px', textAlign: 'center', paddingBottom: '30px' }}>
                 Meet the Team!
               </div>
               <div className='whyyyyy'>
-                <div className='aboutseconddivider'></div>
+                <div className='aboutseconddivider' style={{ width: '30%' }}></div>
               </div>
-              <div className='chartcontainer'>
+              <div className='chartcontainer' style={{ flexDirection: 'column' }}>
                 <div className="paddedoff">
                   <div className="aboutsecondinformation">
                     Praneel Samal
@@ -101,8 +101,8 @@ class AboutMobile extends React.Component {
                     As a driver, you would be responsible for taking food from other people's houses, and dropping it off at food shelter near you.
                   </div>
                 </div>
-                <div className='chartdivpad'>
-                  <div className="chartdivider" />
+                <div className='chartdivpad' style={{ width: '20%', paddingBottom: 5, paddingLeft: 0, paddingRight: 0 }}>
+                  <div className="chartdivider" style={{ width: '100%', height: 5 }}/>
                 </div>
                 <div className='otherpaddedoff'>
                   <div className="aboutsecondinformation">

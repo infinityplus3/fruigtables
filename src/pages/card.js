@@ -16,12 +16,13 @@ class Card extends React.Component {
             <div style={{
                 padding: "20px",
                 display: 'flex',
-                width: "80%"
+                width: "80%",
+                justifyContent: 'center'
             }}>
-                <MaskImg image={this.props.image} heightp={this.props.heightp}></MaskImg>
+                <img height="80%" width='80%' src={this.props.image} />
             </div>
             <div className='divi'></div>
-            <div className="small">{this.props.percent} of {this.props.fruit} are wasted every year.</div>
+            <div className="small">{this.props.percent}% of {this.props.fruit} are wasted every year.</div>
         </div>
     );
   }
